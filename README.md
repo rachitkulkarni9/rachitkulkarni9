@@ -1,8 +1,5 @@
 ## Hi there 👋
 
-🌟 **Projects Coming Soon!**  
-🚧 Nothing here yet, but I'm working on it! 🚧
-
 🌱 **Learning Adventure:**  
 Tracking my progress in software engineering.
 
