@@ -3,7 +3,7 @@
 🌱 **Learning Adventure:**  
 Tracking my progress in software engineering.
 
-💳 **[ArtTrack]([https://finance-tracker-kappa-neon.vercel.app/](https://github.com/rachitkulkarni9/artTrack_Team15.git))**  
+🎨  **[ArtTrack](https://github.com/rachitkulkarni9/artTrack_Team15.git)**  
 A web app to help you track artwork history,ownership and other details. Built with OWL and Semantic Knowledge graph. Front End ReactJS, Back End Flask 
 
 💳 **[Finance Tracker](https://finance-tracker-kappa-neon.vercel.app/)**  
