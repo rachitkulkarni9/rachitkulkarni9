@@ -3,7 +3,10 @@
 🌱 **Learning Adventure:**  
 Tracking my progress in software engineering.
 
-💻 **[Finance Tracker](https://finance-tracker-kappa-neon.vercel.app/)**  
+💳 **[ArtTrack]([https://finance-tracker-kappa-neon.vercel.app/](https://github.com/rachitkulkarni9/artTrack_Team15.git))**  
+A web app to help you track artwork history,ownership and other details. Built with OWL and Semantic Knowledge graph. Front End ReactJS, Back End Flask 
+
+💳 **[Finance Tracker](https://finance-tracker-kappa-neon.vercel.app/)**  
 A web app to help you track your expenses, set budgets, and stay on top of your finances. Built with HTML, CSS, JavaScript, and Chart.js.
 
 💻 **[Agile Simulator](https://github.com/rachitkulkarni9/AgileSimulator.git)**  
