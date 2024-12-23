@@ -1,0 +1,75 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    text-align: left;
+    max-width: 50%;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .download-cv {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .contact-info {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
