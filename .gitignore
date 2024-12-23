@@ -1,0 +1,79 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Build directories
+build/
+dist/
+
+# Production files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.bak
+
+# Service Worker and Cache
+.cache/
+.next/
+
+# Testing
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# Lerna
+lerna-debug.log
+
+# Parcel-bundler cache
+.cache/
+
+# Yarn
+.yarn/
+yarn-error.log
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git Hooks
+.husky/
+
+# Temporary files
+*.temp
+*.tmp
+
+# Mac system files
+*.DS_Store
+
+# Prettier and ESLint logs
+.prettiercache
+.eslintcache
+
+# Storybook
+out/
+storybook-static/
