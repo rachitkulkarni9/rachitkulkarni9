@@ -11,15 +11,17 @@
 .logo-container {
   display: flex;
   align-items: center;
-  flex-shrink: 0; /* Prevents shrinking */
 }
 
 .logo-image {
-  max-width: 100%; /* Ensures responsiveness */
-  max-height: 100px; /* Maximum height for scaling */
-  height: 80px; /* Maintain aspect ratio */
-  width: 100px; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure proper fit without distortion */
+  width: 100px; /* Increase width */
+  height: 80px; /* Increase height */
+  object-fit: contain; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add smooth scaling on hover */
+}
+
+.logo-image:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 .nav-links {

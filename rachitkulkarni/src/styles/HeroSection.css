@@ -1,107 +1,123 @@
+/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f4f4f9; /* Light background */
-  }
-  
-  .hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .hero-text {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .hero-text p {
-    font-size: 1.2rem;
-    color: #556b84; /* Muted blue-grey */
-    margin-bottom: 10px;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2b2d42; /* Dark grey */
-    margin-bottom: 15px;
-  }
-  
-  .hero-text h2 {
-    font-size: 1.8rem;
-    color: #f4a261; /* Peachy orange */
-    margin-bottom: 25px;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .buttons button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .download-cv {
-    background-color: #81b29a; /* Soft green */
-  }
-  
-  .download-cv:hover {
-    background-color: #6a9d82; /* Darker green */
-  }
-  
-  .contact-info {
-    background-color: #e07a5f; /* Soft coral */
-  }
-  
-  .contact-info:hover {
-    background-color: #c9644f; /* Darker coral */
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .social-icons a {
-    font-size: 1.5rem;
-    color: #556b84; /* Muted blue-grey */
-    transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #f4a261; /* Peachy orange */
-  }
-  
-  .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero-image img {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #81b29a; /* Soft green */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f9; /* Light background */
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero Text */
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #556b84; /* Muted blue-grey */
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2d42; /* Dark grey */
+  margin-bottom: 15px;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  color: #f4a261; /* Peachy orange */
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.download-cv {
+  background: linear-gradient(90deg, #81b29a, #6a9d82); /* Gradient background */
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.download-cv:hover {
+  background: linear-gradient(90deg, #6a9d82, #81b29a); /* Reverse gradient */
+  transform: translateY(-3px); /* Slight upward movement */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.contact-info {
+  background-color: #e07a5f; /* Soft coral */
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-info:hover {
+  background-color: #c9644f; /* Darker coral */
+  transform: translateY(-3px); /* Slight upward movement */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #556b84; /* Muted blue-grey */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f4a261; /* Peachy orange */
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    border-radius: 15px; /* Rounded corners for a soft look */
+    object-fit: cover; /* Ensures the image fills the container proportionally */
+    border: 5px solid #81b29a; /* Soft green border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   

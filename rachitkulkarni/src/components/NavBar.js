@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/NavBar.css";
-import logo from "../assets/sample.jpeg"; // Replace with the path to your logo
+import logo from "../assets/sample.jpeg"; // Replace with the correct logo path
 
 const Navbar = () => {
   return (
