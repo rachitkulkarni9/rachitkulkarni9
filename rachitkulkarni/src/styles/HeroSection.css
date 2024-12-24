@@ -1,75 +1,107 @@
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9; /* Light background */
   }
   
-  .hero-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .hero-text {
-    text-align: left;
-    max-width: 50%;
+    flex: 1;
+    min-width: 300px;
   }
   
   .hero-text p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #556b84; /* Muted blue-grey */
+    margin-bottom: 10px;
   }
   
   .hero-text h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 10px 0;
+    color: #2b2d42; /* Dark grey */
+    margin-bottom: 15px;
   }
   
   .hero-text h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #f4a261; /* Peachy orange */
+    margin-bottom: 25px;
   }
   
   .buttons {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   
   .buttons button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1rem;
+    cursor: pointer;
+    color: white;
   }
   
   .download-cv {
-    background-color: #000;
-    color: #fff;
+    background-color: #81b29a; /* Soft green */
+  }
+  
+  .download-cv:hover {
+    background-color: #6a9d82; /* Darker green */
   }
   
   .contact-info {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #e07a5f; /* Soft coral */
+  }
+  
+  .contact-info:hover {
+    background-color: #c9644f; /* Darker coral */
   }
   
   .social-icons {
     display: flex;
+    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .social-icons a {
     font-size: 1.5rem;
-    color: #333;
+    color: #556b84; /* Muted blue-grey */
+    transition: color 0.3s;
   }
   
   .social-icons a:hover {
-    color: #000;
+    color: #f4a261; /* Peachy orange */
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #81b29a; /* Soft green */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
