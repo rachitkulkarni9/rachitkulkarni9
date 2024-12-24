@@ -14,10 +14,10 @@
 }
 
 .logo-image {
-  width: 100px; /* Increase width */
-  height: 80px; /* Increase height */
-  object-fit: contain; /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Add smooth scaling on hover */
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .logo-image:hover {
@@ -27,18 +27,43 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 25px; /* Adds spacing between nav links */
 }
 
 .nav-links li {
+  position: relative;
   font-size: 1rem;
   color: white;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  padding: 8px 15px; /* Adds padding to make links look like buttons */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent; /* Default transparent */
 }
 
 .nav-links li:hover {
-  text-decoration: underline;
-  color: #f4a261; /* Accent color */
+  background-color: #f4a261; /* Peachy orange */
+  color: white; /* Ensures text stays visible */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+.nav-links li::after {
+  content: ""; /* Creates a small underline effect */
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #f4a261; /* Peachy orange underline */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links li:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent */
 }
