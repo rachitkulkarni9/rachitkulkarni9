@@ -1,3 +1,4 @@
+/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,17 +7,22 @@
   background-color: #556b84; /* Muted blue-grey */
   color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position:relative;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
 }
 
+/* Logo Container */
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .logo-image {
   width: 70px;
   height: 70px;
-  object-fit: contain;
+  object-fit: contain; /* Ensures the logo fits perfectly */
   transition: transform 0.3s ease;
 }
 
@@ -24,17 +30,18 @@
   transform: scale(1.1); /* Slight enlargement on hover */
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 25px; /* Adds spacing between nav links */
+  gap: 25px; /* Adds spacing between links */
 }
 
 .nav-links li {
   position: relative;
   font-size: 1rem;
   color: white;
-  padding: 8px 15px; /* Adds padding to make links look like buttons */
+  padding: 8px 15px; /* Adds padding for button-like appearance */
   border-radius: 20px; /* Rounded corners */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -42,13 +49,14 @@
 }
 
 .nav-links li:hover {
-  background-color: #f4a261; /* Peachy orange */
-  color: white; /* Ensures text stays visible */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+  background-color: #f4a261; /* Peachy orange on hover */
+  color: white; /* Text stays visible */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Underline Animation */
 .nav-links li::after {
-  content: ""; /* Creates a small underline effect */
+  content: ""; /* Creates an underline */
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -60,10 +68,48 @@
 }
 
 .nav-links li:hover::after {
-  width: 100%; /* Expands underline on hover */
+  width: 100%; /* Full underline on hover */
 }
 
+/* Active Link */
+.nav-links li.active {
+  background-color: #f4a261; /* Highlight color */
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.nav-links li.active::after {
+  width: 100%; /* Full underline for active link */
+}
+/* Navigation Links */
 .nav-links a {
-  text-decoration: none; /* Removes underline */
+  text-decoration: none; /* Removes default underline */
   color: inherit; /* Inherits color from parent */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px; /* Increase padding for touch usability */
+  }
 }

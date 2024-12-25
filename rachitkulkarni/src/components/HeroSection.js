@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/HeroSection.css";
-import profileImage from "../assets/Rachit.jpeg";
+import profileImage from "../assets/Portfolio_Image.jpeg";
 
 const HeroSection = () => {
     return (
