@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import AboutMeSection from "./components/AboutMeSection";
 import SkillsSection from "./components/SkillSection";
+import ProjectsPage from "./components/ProjectPage";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       {/* Third Section */}
       <section id="skills">
         <SkillsSection />
+      </section>
+      {/* Third Section */}
+      <section id="projects">
+        <ProjectsPage />
       </section>
     </div>
   );
