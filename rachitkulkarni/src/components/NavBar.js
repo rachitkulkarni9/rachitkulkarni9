@@ -1,47 +1,44 @@
 import React, { useEffect, useState } from "react";
 import "../styles/NavBar.css";
-import logo from "../assets/sample.jpeg";
+
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState('');
+
+  const handleScroll = () => {
+    const sections = ['skills', 'projects','contact'];
+    const scrollPosition = window.scrollY;
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element && scrollPosition >= element.offsetTop - 50) {
+        setActiveSection(section);
+      }
+    });
+  };
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const options = {
-      threshold: 0.6, // Trigger when 60% of a section is visible
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect(); // Cleanup observer on unmount
   }, []);
 
   return (
     <header className="navbar">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo-image" />
+        <img src="sample.jpeg" alt="Logo" className="logo-image" />
       </div>
       <nav>
         <ul className="nav-links">
-          <li className={activeSection === "hero" ? "active" : ""}>
-            <a href="#hero">About <span>ℹ️</span></a>
+          <li className={activeSection === 'skills' ? 'active' : ''}>
+            <a href="#skills">Skills</a>
           </li>
-          <li className={activeSection === "about" ? "active" : ""}>
-            <a href="#about">Skills <span>🛠️</span></a>
+          <li className={activeSection === 'projects' ? 'active' : ''}>
+            <a href="#projects">Projects</a>
           </li>
-          <li className={activeSection === "skills" ? "active" : ""}>
-            <a href="#skills">Projects <span>📂</span></a>
-          </li>
-          <li className={activeSection === "contact" ? "active" : ""}>
-            <a href="#contact">Contact <span>📬</span></a>
+          <li className={activeSection === 'contact' ? 'active' : ''}>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

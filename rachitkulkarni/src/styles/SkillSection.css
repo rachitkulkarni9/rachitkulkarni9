@@ -1,42 +1,78 @@
-/* Skills Section Container */
-.skills-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f4f4f9; /* Light background */
-  }
-  
-  .skills-heading {
-    font-size: 2.5rem;
-    color: #2b2d42; /* Dark grey */
-    margin-bottom: 40px;
-  }
-  
-  /* Skills Grid */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General Styling */
+.skills-container {
+  background-color: #1a1a2e; /* Dark navy background */
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+  min-height: 100vh; /* Ensure it fills the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif; /* Clean modern font */
+}
+
+.skills-container h2 {
+  font-size: 2.8rem; /* Adjust title size */
+  margin-bottom: 15px;
+  color: #f4a261; /* Peachy orange for title */
+  font-weight: 600;
+}
+
+.skills-description {
+  font-size: 1.3rem; /* Slightly larger font for description */
+  margin-bottom: 25px;
+  color: #dcdcdc; /* Light gray for description */
+  font-weight: 300;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Dynamically adjust columns */
+  gap: 15px; /* Space between items */
+  justify-items: center;
+  align-items: center;
+  width: 100%; /* Full width */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.skill-icon {
+  width: 50px; /* Adjusted icon size */
+  height: 50px;
+  margin-bottom: 8px; /* Spacing between icon and text */
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  color: #f4f4f4;
+  margin: 0;
+  text-align: center;
+  font-weight: 500; /* Slightly bold for better readability */
+}
+
+@media (max-width: 768px) {
   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
-    gap: 30px;
-    justify-items: center; /* Center-align each grid item */
-    align-items: center; /* Vertically align content */
+    grid-template-columns: repeat(4, 1fr); /* Fit 4 items per row on smaller screens */
+    gap: 15px;
   }
-  
-  /* Skill Item */
+
   .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
   }
-  
+
   .skill-icon {
-    width: 70px;
-    height: 70px;
-    object-fit: contain; /* Ensures the logo fits without distortion */
+    width: 40px;
+    height: 40px;
   }
-  
-  .skill-item p {
-    font-size: 0.9rem;
-    color: #556b84; /* Muted blue-grey */
-    margin: 0;
+
+  .skills-description {
+    font-size: 1rem;
   }
-  
+}

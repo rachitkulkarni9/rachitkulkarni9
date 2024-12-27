@@ -32,7 +32,7 @@ const HeroSection = () => {
               className="social-icon"
             />
           </a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/rachitkulkarni9/" target="_blank" rel="noopener noreferrer">
             <img
               src="github.png"
               alt="GitHub"

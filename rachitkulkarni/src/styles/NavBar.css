@@ -6,7 +6,7 @@
   padding: 15px 30px;
   background-color: #162447; /* Dark navy background */
   color: white;
-  position:absolute;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -49,17 +49,17 @@
   background-color: transparent; /* Default transparent */
 }
 
+/* Universal hover effect for all links */
 .nav-links li:hover {
   background-color: #e43f5a; /* Reddish hover background */
   color: white; /* Text stays visible */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-/* Active Link */
-.nav-links li.active {
-  background-color: #f4a261; /* Highlight active link */
-  color: #1a1a2e; /* Text color for active state */
-  font-weight: 600;
+/* Ensure hover works on all links */
+.nav-links li a:hover {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Ensures hover color matches */
 }
 
 /* Links */
@@ -88,4 +88,9 @@
     text-align: left;
     padding: 10px 20px;
   }
+}
+
+.nav-links li.active a {
+  border-bottom: 2px solid #f4a261; /* Highlight active link */
+  color: #f4a261; /* Change text color for active link */
 }

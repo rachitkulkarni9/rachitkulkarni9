@@ -7,25 +7,26 @@ const ProjectsPage = () => {
       title: "Art-Track",
       description:
         "A platform to explore and organize artwork using an ontology and graph database. Features React.js frontend and Flask backend.",
-      githubLink: "https://github.com/your-username/art-track",
+      githubLink: "https://github.com/your-username/art-track"
     },
     {
       title: "LeetCode Explorer",
       description:
         "A full-stack application to explore company-specific LeetCode questions using a relational database and dynamic search functionality.",
-      githubLink: "https://github.com/your-username/leetcode-explorer",
+      githubLink: "https://github.com/your-username/leetcode-explorer"
     },
     {
       title: "Finance Tracker",
       description:
         "A finance tracking app to manage budgets and analyze expenses, built using React.js and Firebase.",
-      githubLink: "https://github.com/your-username/finance-tracker",
+      githubLink: "https://github.com/your-username/finance-tracker"
     },
   ];
 
   return (
     <section className="projects-page">
       <h2 className="title">Projects</h2>
+      <p className="projects-intro">Here are some of my projects showcasing my skills and expertise.</p>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
@@ -35,7 +36,7 @@ const ProjectsPage = () => {
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="github-link"
+              className="project-button"
             >
               View on GitHub
             </a>

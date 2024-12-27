@@ -1,38 +1,53 @@
 import React from "react";
 import "../styles/SkillSection.css"
 
-const SkillsSection = () => {
+
   const skills = [
-    { name: "React", icon: "react.png" },
-    { name: "HTML CSS JAVASCRIPT", icon: "html-css-js.png" },
-    { name: "Next.js", icon: "path-to-nextjs-icon.png" },
-    { name: "Bootstrap", icon: "path-to-bootstrap-icon.png" },
-    { name: "Express.js", icon: "path-to-express-icon.png" },
-    { name: "Firebase", icon: "path-to-firebase-icon.png" },
-    { name: "GitHub", icon: "path-to-github-icon.png" },
-    { name: "Git", icon: "path-to-git-icon.png" },
-    { name: "Heroku", icon: "path-to-heroku-icon.png" },
-    { name: "jQuery", icon: "path-to-jquery-icon.png" },
-    { name: "Markdown", icon: "path-to-markdown-icon.png" },
-    { name: "MongoDB", icon: "path-to-mongodb-icon.png" },
-    { name: "MySQL", icon: "path-to-mysql-icon.png" },
-    { name: "npm", icon: "path-to-npm-icon.png" },
-    { name: "Node.js", icon: "path-to-node-icon.png" },
+    { name: "C", icon: "C.png"},
+    { name: "C++", icon: "C++.png"},
+    { name: "Java", icon: "Java.png"},
+    { name: "Python", icon: "Python.png"},
+    { name: "HTML", icon: "html.png" },
+    { name: "CSS", icon: "css.png" },
+    { name: "JavaScript", icon: "JavaScript.png" },
+    { name: "ReactJS", icon: "ReactJS.png"},
+    { name: "NodeJS", icon: "NodeJS.png"},
+    { name: "Spring Boot", icon: "springboot.png" },
+    { name: "Flask", icon: "Flask.png" },
+    { name: "Junit5", icon: "Junit5.jpg"},
+    { name: "PyTest", icon: "PyTest.jpg"},
+    { name: "GraphDB", icon: "GraphDB.png"},
+    { name: "MySQL", icon: "MySQL.png"},
+    { name: "PostgreSQL", icon: "PostGreSQL.png"},
+    { name: "GraphQL", icon: "GraphQL.png"},
+    { name: "GitHub", icon: "github.png" },
+    { name: "Git", icon: "GitLab.png" },
+    { name: "CI/CD", icon: "CICD.png" },
+    { name: "Docker", icon: "Docker.png"},
+    { name: "Azzure", icon: "Azzure.png"},
+    { name: "Jenkins", icon: "Jenkins.png"},
+    { name: "netlify", icon: "Netlify.png"},
+    { name: "Windows", icon: "Windows.png"},
+    { name: "Linux", icon: "Linux.png"}
   ];
 
-  return (
-    <section className="skills-section">
-      <h2 className="skills-heading">Skills</h2>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-item">
-            <img src={skill.icon} alt={skill.name} className="skill-icon" />
-            <p>{skill.name}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
-
-export default SkillsSection;
+  const SkillSection = () => {
+    return (
+      <section id="skills" className="skills-container">
+        <h2>Skills</h2>
+        <p className="skills-description">
+          With my experience, these are the skills I possess.
+        </p>
+        <div className="skills-grid">
+          {skills.map((skill, index) => (
+            <div className="skill-card" key={index}>
+              <img src={skill.icon} alt={skill.name} className="skill-icon" />
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  };
+  
+  export default SkillSection;

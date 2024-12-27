@@ -1,30 +1,20 @@
-import React from "react";
-import "./App.css";
-import Navbar from "./components/NavBar";
-import HeroSection from "./components/HeroSection";
-import AboutMeSection from "./components/AboutMeSection";
-import SkillsSection from "./components/SkillSection";
-import ProjectsPage from "./components/ProjectPage";
+import React from 'react';
+import './App.css';
+import Navbar from './components/NavBar';
+import HeroSection from './components/HeroSection';
+import SkillsSection from './components/SkillSection';
+import ProjectsPage from './components/ProjectPage';
 
 function App() {
   return (
     <div className="app-container">
-      {/* First Section with Navbar */}
+      <Navbar />
       <section id="hero">
-        <Navbar />
         <HeroSection />
       </section>
-
-      {/* Second Section */}
-      <section id="about">
-        <AboutMeSection />
-      </section>
-
-      {/* Third Section */}
       <section id="skills">
         <SkillsSection />
       </section>
-      {/* Third Section */}
       <section id="projects">
         <ProjectsPage />
       </section>
