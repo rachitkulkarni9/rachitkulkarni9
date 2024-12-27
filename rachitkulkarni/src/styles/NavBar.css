@@ -3,13 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background-color: #556b84; /* Muted blue-grey */
+  padding: 15px 30px;
+  background-color: #162447; /* Dark navy background */
   color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  position:relative;
+  position:absolute;
+  width: 100%;
   top: 0;
-  z-index: 1000; /* Ensures it stays above other elements */
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 /* Logo Container */
@@ -20,8 +22,8 @@
 }
 
 .logo-image {
-  width: 70px;
-  height: 70px;
+  width: 50px; /* Reduced logo size */
+  height: 50px;
   object-fit: contain; /* Ensures the logo fits perfectly */
   transition: transform 0.3s ease;
 }
@@ -38,10 +40,9 @@
 }
 
 .nav-links li {
-  position: relative;
   font-size: 1rem;
   color: white;
-  padding: 8px 15px; /* Adds padding for button-like appearance */
+  padding: 8px 15px;
   border-radius: 20px; /* Rounded corners */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -49,40 +50,20 @@
 }
 
 .nav-links li:hover {
-  background-color: #f4a261; /* Peachy orange on hover */
+  background-color: #e43f5a; /* Reddish hover background */
   color: white; /* Text stays visible */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-/* Underline Animation */
-.nav-links li::after {
-  content: ""; /* Creates an underline */
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #f4a261; /* Peachy orange underline */
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav-links li:hover::after {
-  width: 100%; /* Full underline on hover */
-}
-
 /* Active Link */
 .nav-links li.active {
-  background-color: #f4a261; /* Highlight color */
-  color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: #f4a261; /* Highlight active link */
+  color: #1a1a2e; /* Text color for active state */
+  font-weight: 600;
 }
 
-.nav-links li.active::after {
-  width: 100%; /* Full underline for active link */
-}
-/* Navigation Links */
-.nav-links a {
+/* Links */
+.nav-links li a {
   text-decoration: none; /* Removes default underline */
   color: inherit; /* Inherits color from parent */
 }
@@ -95,11 +76,6 @@
     padding: 15px 20px;
   }
 
-  .logo-container {
-    justify-content: center;
-    width: 100%;
-  }
-
   .nav-links {
     flex-direction: column;
     gap: 15px;
@@ -110,6 +86,6 @@
   .nav-links li {
     width: 100%;
     text-align: left;
-    padding: 10px 20px; /* Increase padding for touch usability */
+    padding: 10px 20px;
   }
 }
