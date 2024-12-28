@@ -36,6 +36,7 @@ const ContactMePage = () => {
         Feel free to reach out for collaborations, queries, or just a friendly chat!
       </p>
 
+      {/* Contact Form */}
       <div className="contact-form-container">
         <form ref={formRef} className="contact-form" onSubmit={sendEmail}>
           <input
@@ -63,33 +64,38 @@ const ContactMePage = () => {
             Send Message
           </button>
         </form>
-
-        {/* Social Links */}
-        <div className="social-logos-container">
-          <a
-            href="https://www.linkedin.com/in/rachitkulkarni/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="linkedin.png" /* LinkedIn Logo */
-              alt="LinkedIn"
-              className="social-logo"
-            />
-          </a>
-          <a
-            href="https://github.com/rachitkulkarni9/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="github.png" /* GitHub Logo */
-              alt="GitHub"
-              className="social-logo"
-            />
-          </a>
-        </div>
       </div>
+
+      {/* Social Links */}
+      <div className="social-logos-container">
+        <a
+          href="https://www.linkedin.com/in/rachitkulkarni/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="linkedin.png" /* Replace with your LinkedIn logo path */
+            alt="LinkedIn"
+            className="social-logo"
+          />
+        </a>
+        <a
+          href="https://github.com/rachitkulkarni9/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="github.png" /* Replace with your GitHub logo path */
+            alt="GitHub"
+            className="social-logo"
+          />
+        </a>
+      </div>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>Copyright © 2024 Rachit Girish Kulkarni. All Rights Reserved</p>
+      </footer>
     </div>
   );
 };
