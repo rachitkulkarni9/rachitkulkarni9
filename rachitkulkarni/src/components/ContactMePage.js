@@ -11,7 +11,7 @@ const ContactMePage = () => {
     emailjs
       .sendForm(
         "service_jjzrae9", // Replace with your EmailJS service ID
-        "Email", // Replace with your EmailJS template ID
+        "template_xbt7ctd", // Replace with your EmailJS template ID
         formRef.current,
         "BMMVgsmitM-aX-obB" // Replace with your EmailJS public key
       )
