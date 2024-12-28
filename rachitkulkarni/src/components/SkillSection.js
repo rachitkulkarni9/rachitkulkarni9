@@ -3,15 +3,15 @@ import "../styles/SkillSection.css"
 
 
   const skills = [
-    { name: "C", icon: "C.png"},
+    { name: "C", icon: "C.jpg"},
     { name: "C++", icon: "C++.png"},
     { name: "Java", icon: "Java.png"},
-    { name: "Python", icon: "Python.png"},
-    { name: "HTML", icon: "html.png" },
+    { name: "Python", icon: "Python.jpg"},
+    { name: "HTML", icon: "html.jpg" },
     { name: "CSS", icon: "css.png" },
     { name: "JavaScript", icon: "JavaScript.png" },
-    { name: "ReactJS", icon: "ReactJS.png"},
-    { name: "NodeJS", icon: "NodeJS.png"},
+    { name: "ReactJS", icon: "React.png"},
+    { name: "NodeJS", icon: "NodeJS.jpg"},
     { name: "Spring Boot", icon: "springboot.png" },
     { name: "Flask", icon: "Flask.png" },
     { name: "Junit5", icon: "Junit5.jpg"},
@@ -25,10 +25,8 @@ import "../styles/SkillSection.css"
     { name: "CI/CD", icon: "CICD.png" },
     { name: "Docker", icon: "Docker.png"},
     { name: "Azzure", icon: "Azzure.png"},
-    { name: "Jenkins", icon: "Jenkins.png"},
-    { name: "netlify", icon: "Netlify.png"},
-    { name: "Windows", icon: "Windows.png"},
-    { name: "Linux", icon: "Linux.png"}
+    { name: "Jenkins", icon: "Jenkins.jpg"},
+    { name: "Linux", icon: "Linux.jpg"}    
   ];
 
   const SkillSection = () => {
