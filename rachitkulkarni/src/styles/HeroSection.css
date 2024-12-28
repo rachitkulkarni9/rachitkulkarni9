@@ -1,22 +1,22 @@
-/* Hero Container */
+/* Hero Section Container */
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #1a1a2e;
-  height: 100vh;
+  background-color: #1a1a2e; /* Deep dark blue background */
+  height: 100vh; /* Full viewport height */
   color: white;
 }
 
-/* Hero Text */
+/* Hero Text Container */
 .hero-text {
   flex: 1;
-  padding-right: 20px;
+  padding-right: 20px; /* Space between text and image */
 }
 
 .hero-text p {
-  color: #f4a261;
+  color: #f4a261; /* Accent color for "Hello, Welcome" */
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -31,56 +31,31 @@
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #dcdcdc;
+  color: #dcdcdc; /* Light grey text */
 }
 
-/* Button */
+/* Hero Image */
+.hero-image {
+  width: 250px; /* Reduced image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Hero Button */
 .hero-button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #f4a261;
+  color: #1a1a2e;
   padding: 12px 25px;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  margin-bottom: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-button:hover {
-  background-color: #45a049;
+  background-color: #ffa726;
   transform: scale(1.05);
-}
-
-/* Social Links */
-.social-links {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.social-icon {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-/* Hero Image */
-.hero-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image {
-  width: 250px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

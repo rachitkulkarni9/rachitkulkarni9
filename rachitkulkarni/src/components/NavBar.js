@@ -1,44 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import "../styles/NavBar.css";
 
-
-const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('');
-
-  const handleScroll = () => {
-    const sections = ['skills', 'projects','contact'];
-    const scrollPosition = window.scrollY;
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section);
-      if (element && scrollPosition >= element.offsetTop - 50) {
-        setActiveSection(section);
-      }
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+const NavBar = () => {
   return (
     <header className="navbar">
       <div className="logo-container">
-        <img src="sample.jpeg" alt="Logo" className="logo-image" />
+        <img src="R.png" alt="Logo" className="logo-image" />
       </div>
       <nav>
         <ul className="nav-links">
-          <li className={activeSection === 'skills' ? 'active' : ''}>
-            <a href="#skills">Skills</a>
+          <li>
+            <Link to="skills" smooth={true} duration={500} offset={-70}>
+              Skills
+            </Link>
           </li>
-          <li className={activeSection === 'projects' ? 'active' : ''}>
-            <a href="#projects">Projects</a>
+          <li>
+            <Link to="projects" smooth={true} duration={500} offset={-70}>
+              Projects
+            </Link>
           </li>
-          <li className={activeSection === 'contact' ? 'active' : ''}>
-            <a href="#contact">Contact</a>
+          <li>
+            <Link to="contact" smooth={true} duration={500} offset={-70}>
+              Contact Me
+            </Link>
           </li>
         </ul>
       </nav>
@@ -46,4 +31,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

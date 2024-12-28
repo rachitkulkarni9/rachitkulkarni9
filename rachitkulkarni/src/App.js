@@ -1,22 +1,25 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/NavBar';
-import HeroSection from './components/HeroSection';
-import SkillsSection from './components/SkillSection';
-import ProjectsPage from './components/ProjectPage';
+import React from "react";
+import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeroSection";
+import SkillSection from "./components/SkillSection";
+import ProjectPage from "./components/ProjectPage";
+import ContactMePage from "./components/ContactMePage";
 
 function App() {
   return (
-    <div className="app-container">
-      <Navbar />
+    <div>
+      <NavBar />
       <section id="hero">
         <HeroSection />
       </section>
       <section id="skills">
-        <SkillsSection />
+        <SkillSection />
       </section>
       <section id="projects">
-        <ProjectsPage />
+        <ProjectPage />
+      </section>
+      <section id="contact">
+        <ContactMePage />
       </section>
     </div>
   );

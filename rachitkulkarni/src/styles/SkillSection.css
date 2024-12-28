@@ -2,15 +2,11 @@
 
 /* General Styling */
 .skills-container {
-  background-color: #1a1a2e; /* Dark navy background */
+  background-color: #1a1a2e;
   padding: 30px 20px;
   text-align: center;
   color: white;
-  min-height: 100vh; /* Ensure it fills the screen */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif; /* Clean modern font */
+  min-height: 100vh;
 }
 
 .skills-container h2 {
@@ -29,12 +25,11 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Dynamically adjust columns */
-  gap: 15px; /* Space between items */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
   justify-items: center;
-  align-items: center;
-  width: 100%; /* Full width */
 }
+
 
 .skill-item {
   display: flex;

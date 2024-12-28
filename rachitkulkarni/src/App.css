@@ -12,16 +12,15 @@ a {
 }
 
 section {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.app-container {
+  min-height: 100vh; /* Ensures each section covers the entire viewport */
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-}
-html {
-  scroll-behavior: smooth;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
 }
 
+html {
+  scroll-behavior: smooth; /* Smooth scrolling between sections */
+}

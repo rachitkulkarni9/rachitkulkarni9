@@ -1,44 +1,32 @@
-import React from 'react';
-import '../styles/AboutMeSection.css'; // Import the CSS file
-import { FaLaptop } from 'react-icons/fa'; // Import Laptop icon from react-icons
+import React from "react";
+import "../styles/AboutMeSection.css";
 
 const AboutMeSection = () => {
   return (
-    <section className="about-me">
-      <h2 className="title">About Me</h2>
-      <div className="container">
-        <div className="image-box">
-          <img
-            src="Portfolio_Image.jpeg" // Replace with the path to your image
-            alt="Profile"
-          />
-        </div>
-        <div className="info-boxes">
-          <div className="box">
-            <div className="icon">
-              <FaLaptop />
-            </div>
-            <h3>Experience</h3>
-            <p>3+ years</p>
-            <p>Full-Stack Development</p>
-          </div>
-          <div className="box">
-            <div className="icon">🎓</div>
-            <h3>Education</h3>
-            <p>M.S. Software Engineering</p>
-            <p>B.Tech. Computer Science</p>
-          </div>
+    <div className="about-section">
+      <h2 className="about-title">About Me</h2>
+      <div className="about-content">
+        <img
+          src="Portfolio_Image.jpeg" // Replace with your actual image path
+          alt="About Me"
+          className="about-image"
+        />
+        <div className="about-text">
+          <p>
+            I am a passionate software engineering graduate with expertise in
+            building dynamic and responsive web applications. Skilled in
+            full-stack development, database management, and object-oriented
+            programming, I thrive on solving real-world problems with elegant
+            and efficient solutions.
+          </p>
+          <p>
+            My proficiency spans technologies such as JavaScript, React.js,
+            Python, and SQL. I am continually learning to expand my technical
+            and problem-solving skills.
+          </p>
         </div>
       </div>
-      <div className="description">
-        <p>
-          Software Engineering graduate with experience in full-stack
-          development. Skilled in creating dynamic web applications with
-          React.js, Flask, and integrating graph databases like GraphDB.
-          Experienced in deployment on platforms like Azure and Vercel.
-        </p>
-      </div>
-    </section>
+    </div>
   );
 };
 

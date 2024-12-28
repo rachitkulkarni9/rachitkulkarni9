@@ -24,22 +24,6 @@ const HeroSection = () => {
         <button className="hero-button" onClick={handleDownloadCV}>
           Download CV
         </button>
-        <div className="social-links">
-          <a href="https://www.linkedin.com/in/rachitkulkarni/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="/linkedin.png"
-              alt="LinkedIn"
-              className="social-icon"
-            />
-          </a>
-          <a href="https://github.com/rachitkulkarni9/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="github.png"
-              alt="GitHub"
-              className="social-icon"
-            />
-          </a>
-        </div>
       </div>
       <div className="hero-image-container">
         <img
