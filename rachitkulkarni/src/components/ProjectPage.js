@@ -12,7 +12,7 @@ const ProjectsPage = () => {
     {
       title: "LeetCode Explorer",
       description:
-        "A full-stack application to explore company-specific LeetCode questions using a relational database and dynamic search functionality."
+        "A full-stack application to explore company-specific LeetCode questions using a relational database and dynamic search functionality.Work in progress"
     },
     {
       title: "Finance Tracker",
