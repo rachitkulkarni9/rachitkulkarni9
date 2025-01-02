@@ -18,7 +18,7 @@ const ProjectsPage = () => {
       title: "Finance Tracker",
       description:
         "A finance tracking app to manage budgets and analyze expenses, built using React.js",
-      githubLink: "https://github.com/rachitkulkarni9/Finance_Tracker"
+      githubLink: "https://finance-tracker-kappa-neon.vercel.app/"
     },
   ];
 
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
               rel="noopener noreferrer"
               className="project-button"
             >
-              View on GitHub
+              View Project
             </a>
           </div>
         ))}
