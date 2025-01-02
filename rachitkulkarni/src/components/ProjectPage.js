@@ -12,8 +12,7 @@ const ProjectsPage = () => {
     {
       title: "LeetCode Explorer",
       description:
-        "A full-stack application to explore company-specific LeetCode questions using a relational database and dynamic search functionality.",
-      githubLink: "https://github.com/rachitkulkarni9/LeetCodeExplorer"
+        "A full-stack application to explore company-specific LeetCode questions using a relational database and dynamic search functionality."
     },
     {
       title: "Finance Tracker",
