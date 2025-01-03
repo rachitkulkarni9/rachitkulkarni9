@@ -2,12 +2,9 @@ import React from "react";
 import "../styles/HeroSection.css";
 
 const HeroSection = () => {
-  const handleDownloadCV = () => {
-    // Trigger file download
-    const link = document.createElement("a");
-    link.href = "Resume.pdf"; // Update with the actual resume file path
-    link.download = "Resume_Rachit_G_Kulkarni.pdf"; // Name for the downloaded file
-    link.click();
+  const handleOpenCV = () => {
+    // Open resume in a new tab
+    window.open("Resume.pdf", "_blank"); // Replace with the actual URL of the resume
   };
 
   return (
@@ -21,8 +18,8 @@ const HeroSection = () => {
           React.js, Flask, and integrating graph databases like GraphDB.
           Experienced in deployment on platforms like Azure.
         </p>
-        <button className="hero-button" onClick={handleDownloadCV}>
-          Download CV
+        <button className="hero-button" onClick={handleOpenCV}>
+          View CV
         </button>
       </div>
       <div className="hero-image-container">

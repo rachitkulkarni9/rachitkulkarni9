@@ -7,7 +7,7 @@ import "../styles/SkillSection.css"
     { name: "C++", icon: "C++.png"},
     { name: "Java", icon: "Java.png"},
     { name: "Python", icon: "Python.jpg"},
-    { name: "HTML", icon: "HTML.JPG"   },
+    { name: "HTML", icon: "HTML.jpg"   },
     { name: "CSS", icon: "css.png" },
     { name: "JavaScript", icon: "JavaScript.png" },
     { name: "ReactJS", icon: "React.png"},
