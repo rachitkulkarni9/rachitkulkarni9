@@ -15,4 +15,4 @@ A Java application that helps you simulate the process of a sprint in an agile e
 📫 **Let’s Connect!**  
 If you're curious about my journey, want to collaborate, or just feel like saying hello, reach out through the Contact Me form on the site or find me here:  
 [LinkedIn](https://www.linkedin.com/in/rachitkulkarni/)
-[Portfolio](https://rachitkulkarni9.vercel.app/)
+[Portfolio](https://rachitkulkarni9.vercel.app/) ( under progress)
